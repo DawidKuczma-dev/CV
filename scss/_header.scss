@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 $space-md $space-sm;
+  text-align: center;
+  &__top {
+    padding-top: $space-sm;
+    margin: 0 $space-sm;
+    background: linear-gradient(180deg, $color-bg 0%, $color-gradient 50%, $color-bg 100%);
+    overflow: hidden;
+  }
+  &__logo,
+  .socials,
+  &__avatar {
+    transform: translateY(-250px);
+    opacity: 0;
+    animation: slideDown 1s ease-out forwards;
+  }
+  &__logo {
+    font-weight: 500;
+    animation-delay: 0.8s;
+  }
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+    margin: $space-sm 0;
+    animation-delay: 0.6s;
+    &__item {
+      width: 15%;
+    }
+  }
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    animation-delay: 0.6s;
+    transform: translateY(250px);
+    img {
+      height: 35vh;
+    }
+  }
+
+  &__title {
+    margin: $space-sm 0;
+    font-size: $fs-lg;
+  }
+  &__intro {
+    font-family: $font-secondary;
+    color: $color-text-secondary;
+  }
+  &__portfolio {
+    font-size: $fs-lg;
+    margin-top: auto;
+    padding: $space-xxxs 0;
+    border: 2px solid $color-highlight;
+    border-radius: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover,
+    &:active {
+      background-color: $color-highlight;
+      color: $color-bg;
+      transform: scale(0.95);
+    }
+  }
+}
+
+.highlight {
+  border-bottom: 4px solid $color-highlight;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
