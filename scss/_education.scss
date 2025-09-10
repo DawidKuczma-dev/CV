@@ -1,0 +1,31 @@
+.education {
+  padding-bottom: $space-xxs;
+  &__title {
+    text-align: center;
+    font-size: $fs-xl;
+    margin-bottom: $space-lg;
+  }
+  &__item {
+    padding-bottom: $space-md;
+  }
+  &__school {
+    font-size: $fs-ms;
+  }
+  &__date {
+    font-size: $fs-rg;
+  }
+  &__details {
+    font-family: $font-secondary;
+    color: $color-text-secondary;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideFadeDown 1s ease-out forwards;
+  }
+}
+
+@keyframes slideFadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
