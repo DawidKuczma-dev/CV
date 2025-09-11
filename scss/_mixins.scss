@@ -1,0 +1,21 @@
+@mixin section {
+  padding-bottom: $space-xxs;
+
+  &__title {
+    text-align: center;
+    font-size: $fs-xl;
+    margin-bottom: $space-lg;
+  }
+
+  &__item {
+    padding-bottom: $space-md;
+  }
+}
+
+.experience {
+  @include section;
+}
+
+.education {
+  @include section;
+}

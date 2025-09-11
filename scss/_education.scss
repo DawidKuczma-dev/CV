@@ -1,18 +1,10 @@
 .education {
-  padding-bottom: $space-xxs;
-  &__title {
-    text-align: center;
-    font-size: $fs-xl;
-    margin-bottom: $space-lg;
-  }
-  &__item {
-    padding-bottom: $space-md;
-  }
+  @include section;
   &__school {
     font-size: $fs-ms;
   }
   &__date {
-    font-size: $fs-rg;
+    font-size: $fs-sm;
   }
   &__details {
     font-family: $font-secondary;
