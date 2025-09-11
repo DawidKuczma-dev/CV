@@ -19,11 +19,11 @@
     color: $color-text-secondary;
     opacity: 0;
     transform: translateY(-50px);
-    animation: slideFadeDown 1s ease-out forwards;
+    animation: FadeInDown 1s ease-out forwards;
   }
 }
 
-@keyframes slideFadeDown {
+@keyframes FadeInDown {
   to {
     opacity: 1;
     transform: translateY(0);

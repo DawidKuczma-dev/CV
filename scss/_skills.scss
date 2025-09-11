@@ -18,7 +18,7 @@
       padding-left: 0;
       transform: translateX(270px);
       opacity: 0;
-      animation: odBoku 0.5s ease-out forwards;
+      animation: fadeInRight 0.5s ease-out forwards;
       li {
         font-size: $fs-xs;
         font-family: $font-secondary;
@@ -45,7 +45,7 @@
   }
 }
 
-@keyframes odBoku {
+@keyframes fadeInRight {
   to {
     transform: translateX(0);
     opacity: 1;

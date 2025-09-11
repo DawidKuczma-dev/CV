@@ -15,7 +15,7 @@
   &__avatar {
     transform: translateY(-250px);
     opacity: 0;
-    animation: slideDown 1s ease-out forwards;
+    animation: FadeIn 1s ease-out forwards;
   }
   &__logo {
     font-weight: 500;
@@ -71,7 +71,7 @@
   border-bottom: 4px solid $color-highlight;
 }
 
-@keyframes slideDown {
+@keyframes FadeIn {
   to {
     transform: translateY(0);
     opacity: 1;
