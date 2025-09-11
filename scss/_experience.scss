@@ -1,0 +1,55 @@
+.experience {
+  padding-bottom: $space-xxs;
+  &__title {
+    text-align: center;
+    font-size: $fs-xl;
+    margin-bottom: $space-lg;
+  }
+  &__item {
+    padding-bottom: $space-md;
+  }
+  &__position {
+    font-size: $fs-ms;
+    span {
+      font-size: $fs-sm;
+      font-family: $font-secondary;
+      color: $color-text-secondary;
+    }
+  }
+  &__company {
+    font-size: $fs-rg;
+  }
+  &__date {
+    font-family: $font-secondary;
+    color: $color-text-secondary;
+  }
+  &__details {
+    margin-top: $space-xxs;
+    padding-left: 0;
+    font-family: $font-secondary;
+    color: $color-text-secondary;
+    list-style-type: none;
+    li {
+      opacity: 0;
+      transform: translateX(300px);
+      animation: fadeInRight 1s ease-out forwards;
+      &::before {
+        content: '-';
+        display: inline-block;
+        width: 1rem;
+      }
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          animation-delay: ($i - 1) * 0.5s + 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
