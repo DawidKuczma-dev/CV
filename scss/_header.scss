@@ -41,10 +41,12 @@
       height: 35vh;
     }
   }
-
   &__title {
     margin: $space-sm 0;
     font-size: $fs-lg;
+    span {
+      @include highlight();
+    }
   }
   &__intro {
     font-family: $font-secondary;
@@ -65,10 +67,6 @@
       transform: scale(0.95);
     }
   }
-}
-
-.highlight {
-  border-bottom: 4px solid $color-highlight;
 }
 
 @keyframes FadeIn {

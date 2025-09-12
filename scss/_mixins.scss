@@ -1,3 +1,7 @@
+@mixin highlight($thickness: 4px) {
+  border-bottom: $thickness solid $color-highlight;
+}
+
 @mixin section {
   padding-bottom: $space-xxs;
 
@@ -10,12 +14,4 @@
   &__item {
     padding-bottom: $space-md;
   }
-}
-
-.experience {
-  @include section;
-}
-
-.education {
-  @include section;
 }
