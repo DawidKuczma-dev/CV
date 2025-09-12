@@ -1,0 +1,26 @@
+.projects {
+  @include section;
+  &__name {
+    margin: $space-xxs 0;
+    font-size: $fs-ms;
+  }
+  &__tech {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    li {
+      margin-right: $space-xs;
+      font-size: $fs-rg;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $space-sm;
+    a {
+      text-transform: uppercase;
+      font-size: $fs-sm;
+      @include highlight(1px);
+    }
+  }
+}
